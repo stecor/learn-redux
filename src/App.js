@@ -12,11 +12,11 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotals(), [cartItems])
-  }, [])
+  })
 
   useEffect(() => {
     dispatch(getCartItems())
-  }, [])
+  })
 
   return isLoading ? (
     <div className='loading'>
